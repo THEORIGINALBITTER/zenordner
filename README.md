@@ -53,7 +53,7 @@ Probiere es aus und bring mehr Farbe in deinen Mac-Alltag!
 
 ---
 
-## Tipps zur Weiterentwicklung
+## Entwickllung zur Weiterentwicklung und was ich noch geplant ist.
 
 - **Modularisierung**  
   UI in einzelne Views & Komponenten aufteilen (Drag&Drop, ColorPicker, IconPicker).
