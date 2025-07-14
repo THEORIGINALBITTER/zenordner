@@ -11,7 +11,7 @@ Wir haben eine **einfach zu bedienende App** entwickelt, mit der du genau das ma
 - **Ordnerfarben auf macOS ändern** 
 
 - **Optional ein individuelles Logo / Icon zum Ordner hinzufügen**  
-- Alles läuft **nativ in Swift** – schnell, schlank und sicher  
+- Alles läuft **nativ als MAC OS App** – schnell, schlank und sicher  
 - Einfach als eigenständige App, ohne komplizierte Einstellungen oder Terminal-Befehle  
 
 So kannst du deine Ordner personalisieren und besser organisieren – direkt per Drag & Drop oder mit wenigen Klicks.
