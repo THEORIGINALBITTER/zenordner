@@ -4,12 +4,17 @@ Jeder macOS-Nutzer kennt das Problem: Die Standard-Ordnerfarbe ist immer gleich 
 
 Wir haben eine **einfach zu bedienende App** entwickelt, mit der du genau das machen kannst:
 
-- **Ordnerfarben auf macOS ändern**  
+- **Ordnerfarben auf macOS ändern** 
+
 - **Optional ein individuelles Logo / Icon zum Ordner hinzufügen**  
 - Alles läuft **nativ in Swift** – schnell, schlank und sicher  
 - Einfach als eigenständige App, ohne komplizierte Einstellungen oder Terminal-Befehle  
 
 So kannst du deine Ordner personalisieren und besser organisieren – direkt per Drag & Drop oder mit wenigen Klicks.
+
+---
+
+<img width="1124" height="1005" alt="Bildschirmfoto 2025-07-14 um 08 55 02" src="https://github.com/user-attachments/assets/d0f13d9a-c383-40b3-b2aa-c0f92689f713" />
 
 ---
 
@@ -72,70 +77,19 @@ Probiere es aus und bring mehr Farbe in deinen Mac-Alltag!
 
 ---
 
-## Beispiel: IconGenerator.swift
+<img width="1310" height="863" alt="Bildschirmfoto 2025-07-14 um 08 56 33" src="https://github.com/user-attachments/assets/7d795eab-6e12-4b20-a68b-e81c860a7aa9" />
 
-```swift
-import Cocoa
+---
 
-struct IconGenerator {
-    
-    /// Erstellt ein NSImage mit einer farbigen Hintergrundfläche und optional einem Logo (Asset oder Datei)
-    /// - Parameters:
-    ///   - color: Hintergrundfarbe (NSColor)
-    ///   - logoURL: URL zum Logo (optional)
-    ///   - assetIconName: Name des Asset-Icons (optional)
-    /// - Returns: NSImage für Ordnericon oder nil bei Fehler
-    static func makeIcon(color: NSColor, logoURL: URL? = nil, assetIconName: String? = nil) -> NSImage? {
-        
-        let size = NSSize(width: 512, height: 512)
-        let image = NSImage(size: size)
-        
-        image.lockFocus()
-        
-        // Hintergrund mit Farbe füllen (rund oder rechteckig)
-        let rect = NSRect(origin: .zero, size: size)
-        color.setFill()
-        let path = NSBezierPath(roundedRect: rect, xRadius: 80, yRadius: 80)
-        path.fill()
-        
-        // Logo laden (Asset oder Datei)
-        var logoImage: NSImage? = nil
-        
-        if let assetName = assetIconName {
-            logoImage = NSImage(named: NSImage.Name(assetName))
-        } else if let url = logoURL {
-            logoImage = NSImage(contentsOf: url)
-        }
-        
-        // Logo zeichnen, mittig und skaliert
-        if let logo = logoImage {
-            let maxLogoSize = NSSize(width: 256, height: 256)
-            let aspectRatio = min(maxLogoSize.width / logo.size.width, maxLogoSize.height / logo.size.height)
-            let logoSize = NSSize(width: logo.size.width * aspectRatio, height: logo.size.height * aspectRatio)
-            
-            let logoOrigin = NSPoint(
-                x: (size.width - logoSize.width) / 2,
-                y: (size.height - logoSize.height) / 2
-            )
-            
-            logo.draw(in: NSRect(origin: logoOrigin, size: logoSize),
-                      from: .zero,
-                      operation: .sourceOver,
-                      fraction: 1.0,
-                      respectFlipped: true,
-                      hints: nil)
-        }
-        
-        image.unlockFocus()
-        return image
-    }
-}
+<img width="1310" height="863" alt="Bildschirmfoto 2025-07-14 um 08 56 52" src="https://github.com/user-attachments/assets/95b53943-776d-49c0-adea-160e4b24e3e0" />
+
+---
+
+<img width="1310" height="863" alt="Bildschirmfoto 2025-07-14 um 08 57 20" src="https://github.com/user-attachments/assets/56399711-48f3-4208-9015-d4c39cec814b" />
 
 
 
 
-Bei Interesse oder Feedback einfach melden!  
-Freue mich auf dein Feedback :)
 
 
 
