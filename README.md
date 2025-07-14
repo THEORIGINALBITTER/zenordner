@@ -85,8 +85,7 @@ Probiere es aus und bring mehr Farbe in deinen Mac-Alltag!
 
 ---
 
-<img width="1310" height="863" alt="Bildschirmfoto 2025-07-14 um 08 57 20" src="https://github.com/user-attachments/assets/56399711-48f3-4208-9015-d4c39cec814b" />
-
+<img width="748" height="301" alt="Bildschirmfoto 2025-07-14 um 08 58 55" src="https://github.com/user-attachments/assets/4601aedd-7962-4329-97cb-e0406911e066" />
 
 
 
