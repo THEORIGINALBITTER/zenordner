@@ -1,4 +1,8 @@
-# Ordnerfarben auf macOS ändern – ganz einfach mit unserer App!
+# Ordner in Farben legen  – ganz einfach mit ZenOrdner
+---
+<img width="748" height="301" alt="Bildschirmfoto 2025-07-14 um 08 58 55" src="https://github.com/user-attachments/assets/4c9c1cca-e33c-4352-8b17-01cef54f5b20" />
+
+---
 
 Jeder macOS-Nutzer kennt das Problem: Die Standard-Ordnerfarbe ist immer gleich und lässt sich nicht so einfach anpassen. Dabei wäre es oft praktisch, wichtige Ordner farblich hervorzuheben oder einfach optisch zu ordnen.
 
